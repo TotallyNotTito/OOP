@@ -26,8 +26,11 @@ int main() {
   }
   int count = 0;
   ptr = list;
-  while(1) {
-    ptr++;
+  bool a = true;
+  while(a) {
+    
+    if (ptr++) ptr++;
+    else a = false;
     std::cout << ptr << '\n';
 
     std::cout << *ptr << endl;
@@ -36,6 +39,6 @@ int main() {
 
     ++count;
   }
-  std::cout << "I can read any memory?" << endl;
+  std::cout << "Memory limit found" << endl;
    
 }
